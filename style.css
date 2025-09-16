@@ -524,3 +524,20 @@
               margin-top: 10%;
           }
       }
+
+      @media (max-width: 400px) {
+        .search-container {
+            flex-direction: column;
+        }
+
+        .search-input,
+        .search-btn {
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        .search-btn {
+            border-radius: 4px;
+        }
+      }
