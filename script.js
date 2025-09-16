@@ -49,10 +49,12 @@ function initGalleries() {
         const spinContainer = document.querySelector(`.spin-container[data-category="${categoria}"]`);
         if (!spinContainer) return;
         
-        // Filtrar obras por categoría (para 'all' mostrar todas)
-        const obrasFiltradas = categoria === 'all' 
-            ? obras 
-            : obras.filter(obra => obra.categoria === categoria);
+        let obrasFiltradas = [];
+        if (categoria === 'all') {
+            obrasFiltradas = obras.slice(0, 10);
+        } else {
+            obrasFiltradas = obras.filter(obra => obra.categoria === categoria);
+        }
         
         // Crear elementos img para cada obra en esta categoría
         obrasFiltradas.forEach(obra => {
