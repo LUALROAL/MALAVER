@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Malaver</title>
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">MALAVER</a>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#tecnica">Técnica</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero / Presentación -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>María Malaver</h1>
+                <p>Artista pictórica especializada en óleo sobre lienzo y técnicas con pincel de pelo (tercio pelo)</p>
+                <p>Mi trabajo explora la relación entre la luz, el color y la textura, creando piezas que invitan a la reflexión y la contemplación.</p>
+                <a href="#galeria" class="btn btn-ver">Ver Galería</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Técnicas -->
+    <section id="tecnica" class="techniques">
+        <div class="container">
+            <h2>Técnicas y Materiales</h2>
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <h3>Óleo sobre lienzo</h3>
+                    <p>Trabajo con óleos de alta calidad sobre lienzo de lino, permitiendo una mayor durabilidad y intensidad de color.</p>
+                </div>
+                <div class="technique-card">
+                    <h3>Pincel de pelo (tercio pelo)</h3>
+                    <p>Utilizo pinceles de pelo natural que permiten un mayor control de la pintura y la creación de texturas únicas.</p>
+                </div>
+                <div class="technique-card">
+                    <h3>Técnicas mixtas</h3>
+                    <p>Combino técnicas tradicionales con enfoques contemporáneos para crear obras únicas y expresivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería 3D -->
+    <section id="galeria" class="gallery-3d">
+        <div class="container">
+            <h2>Galería de Obras</h2>
+            
+            <!-- Filtros y búsqueda -->
+            <div class="filters">
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="paisajismo">Paisajismo</button>
+                    <button class="filter-btn" data-filter="bodegones">Bodegones</button>
+                    <button class="filter-btn" data-filter="retratos">Retratos</button>
+                    <button class="filter-btn" data-filter="abstraccion">Abstracción</button>
+                    <button class="filter-btn" data-filter="luz">Estudios de luz</button>
+                    <button class="filter-btn" data-filter="otros">Otros</button>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar obras...">
+                    <button class="search-btn">Buscar</button>
+                </div>
+            </div>
+            
+            <!-- Contenedor de la galería 3D -->
+            <div id="drag-container">
+                <div id="spin-container">
+                    <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+                </div>
+                <div id="ground"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox para vista ampliada -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+           <!-- Contenedor con scroll -->
+        <div class="lightbox-img-wrapper">
+            <img src="" alt="" class="lightbox-img">
+            <div class="lightbox-details">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-year"></p>
+                <p class="lightbox-dimensions"></p>
+                <p class="lightbox-technique"></p>
+                <button class="btn btn-details">Ver detalles completos</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal de detalles de obra -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img src="" alt="" class="modal-img">
+            <h2 class="modal-title"></h2>
+            <p class="modal-year"></p>
+            <p class="modal-dimensions"></p>
+            <p class="modal-technique"></p>
+            <div class="modal-description"></div>
+            <div class="modal-process"></div>
+            <div class="modal-materials"></div>
+            <button class="btn btn-contact">Consultar sobre esta obra</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: artista@email.com</p>
+                    <p>Teléfono: +34 123 456 789</p>
+                    <p>Estudio: Calle Arte 123, Madrid</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Twitter</a></p>
+                </div>
+                <!-- <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir novedades sobre nuevas obras y exposiciones.</p>
+                    <form>
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" class="btn">Suscribirse</button>
+                    </form>
+                </div> -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 María Malaver. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
