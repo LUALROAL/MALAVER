@@ -1,5 +1,8 @@
 import { obras } from './obras.js';
 
+let currentObras = [];
+let currentIndex = 0;
+
 // Variables globales para la galería 3D
 const radius = 240; // Radio del carrusel
 const autoRotate = true; // Rotación automática
@@ -294,9 +297,6 @@ function initLightbox() {
     const lightboxPrev = document.querySelector('.lightbox-prev');
     const lightboxNext = document.querySelector('.lightbox-next');
 
-    let currentIndex = 0;
-    let currentObras = [];
-
     function showImage(index) {
         const obra = currentObras[index];
         if (obra) {
@@ -338,7 +338,7 @@ function initLightbox() {
     // Evento para el botón de ver detalles
     btnDetails.addEventListener('click', function () {
         const id = this.dataset.id;
-        openModal(id);
+        openModal(id, currentObras, currentIndex);
         lightbox.style.display = 'none';
     });
 
@@ -369,6 +369,8 @@ function initLightbox() {
 function initModal() {
     const modal = document.querySelector('.modal');
     const modalClose = document.querySelector('.modal-close');
+    const modalPrev = document.querySelector('.modal-prev');
+    const modalNext = document.querySelector('.modal-next');
 
     // Evento para cerrar el modal
     modalClose.addEventListener('click', function () {
@@ -387,15 +389,29 @@ function initModal() {
         alert('Formulario de contacto abierto para esta obra.');
         // Aquí se podría abrir un formulario de contacto o redirigir a una página de contacto
     });
+
+    // Evento para el botón de anterior
+    modalPrev.addEventListener('click', function () {
+        currentIndex = (currentIndex - 1 + currentObras.length) % currentObras.length;
+        openModal(currentObras[currentIndex].id, currentObras, currentIndex);
+    });
+
+    // Evento para el botón de siguiente
+    modalNext.addEventListener('click', function () {
+        currentIndex = (currentIndex + 1) % currentObras.length;
+        openModal(currentObras[currentIndex].id, currentObras, currentIndex);
+    });
 }
 
 /**
  * Abre el modal con los detalles completos de una obra
  * @param {number} id - ID de la obra a mostrar
+ * @param {Array} obrasArray - Array de obras a utilizar
+ * @param {number} index - Índice de la obra actual
  */
-function openModal(id) {
+function openModal(id, obrasArray, index) {
     const modal = document.querySelector('.modal');
-    const obra = obras.find(o => o.id == id);
+    const obra = obrasArray[index];
 
     if (obra) {
         // Llenar el modal con la información de la obra
@@ -407,6 +423,10 @@ function openModal(id) {
         document.querySelector('.modal-description').innerHTML = `<h3>Descripción</h3><p>${obra.descripcion}</p>`;
         document.querySelector('.modal-process').innerHTML = `<h3>Proceso</h3><p>${obra.proceso}</p>`;
         document.querySelector('.modal-materials').innerHTML = `<h3>Materiales</h3><p>${obra.materiales}</p>`;
+
+        // Asignar el array de obras y el índice actual a las variables globales
+        currentObras = obrasArray;
+        currentIndex = index;
 
         // Mostrar el modal
         modal.style.display = 'flex';
