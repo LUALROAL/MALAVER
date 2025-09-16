@@ -288,6 +288,19 @@
           }
       }
 
+      #drag-container img.loading {
+        animation: loading 1s infinite linear;
+      }
+
+      @keyframes loading {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+      }
+
       /* Filtros y búsqueda */
       .filters {
           padding: 2rem 0;

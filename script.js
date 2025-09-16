@@ -104,6 +104,8 @@
                 img.alt = obra.titulo;
                 img.dataset.id = obra.id;
                 img.dataset.categoria = obra.categoria;
+                img.classList.add('loading');
+                img.onload = () => img.classList.remove('loading');
                 spinContainer.appendChild(img);
             });
             
@@ -116,10 +118,8 @@
             ground.style.width = radius * 3 + "px";
             ground.style.height = radius * 3 + "px";
             
-            // Iniciar animación después de un breve retraso
-            setTimeout(() => {
-                initCarousel();
-            }, 1000);
+            // Iniciar animación
+            initCarousel();
         }
 
         /**
@@ -136,7 +136,7 @@
             aEle.forEach((ele, i) => {
                 ele.style.transform = `rotateY(${i * (360 / aEle.length)}deg) translateZ(${radius}px)`;
                 ele.style.transition = "transform 1s";
-                ele.style.transitionDelay = `${aEle.length - i / 4}s`;
+                ele.style.transitionDelay = `${i / aEle.length}s`;
             });
             
             // Configurar rotación automática
@@ -276,9 +276,7 @@
             });
             
             // Re-inicializar el carrusel después de filtrar
-            setTimeout(() => {
-                initCarousel();
-            }, 300);
+            initCarousel();
         }
 
         /**
@@ -306,9 +304,7 @@
             });
             
             // Re-inicializar el carrusel después de buscar
-            setTimeout(() => {
-                initCarousel();
-            }, 300);
+            initCarousel();
             
             // Mostrar mensaje si no se encontraron resultados
             if (!found) {
