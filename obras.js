@@ -24,18 +24,7 @@
                 proceso: "Técnica de veladuras superpuestas para lograr profundidad y realismo en las texturas.",
                 materiales: "Óleos sobre lienzo de algodón, con pinceles de pelo sintético y natural."
             },
-            {
-                id: 3,
-                titulo: "Retrato de Elena",
-                categoria: "retratos",
-                año: 2023,
-                dimensiones: "60x80 cm",
-                tecnica: "Óleo sobre lienzo",
-                imagen: "https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
-                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
-                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
-            },
+
             {
                 id: 4,
                 titulo: "Abstracción en azul",
@@ -124,7 +113,7 @@
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
             },
             {
-                id: 11,
+                id: 12,
                 titulo: "Libélula",
                 categoria: "animalismo",
                 año: 2022,
@@ -136,7 +125,7 @@
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
             },
             {
-                id: 12,
+                id: 13,
                 titulo: "Mariposas",
                 categoria: "animalismo",
                 año: 2022,
@@ -148,7 +137,7 @@
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
             },
             {
-                id: 12,
+                id: 14,
                 titulo: "Tigre",
                 categoria: "animalismo",
                 año: 2022,
@@ -160,7 +149,7 @@
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
             },
             {
-                id: 13,
+                id: 15,
                 titulo: "León en la sabana",
                 categoria: "animalismo",
                 año: 2022,
@@ -172,7 +161,7 @@
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
             },
             {
-                id: 14,
+                id: 16,
                 titulo: "Flamencos",
                 categoria: "animalismo",
                 año: 2022,
@@ -182,6 +171,104 @@
                 descripcion: "Estudio de la luz natural en su momento más intenso del día.",
                 proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            },
+
+                       // RETRATO
+            {
+                id: 3,
+                titulo: "Retrato de mujer con sombrero rojo",
+                categoria: "retratos",
+                año: 2023,
+                dimensiones: "60x80 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/Retrato/sombrero-rojo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
+                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
+                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
+            },
+            {
+                id: 8,
+                titulo: "Retrato de mujer árabe",
+                categoria: "retratos",
+                año: 2023,
+                dimensiones: "60x80 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/Retrato/arabe.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
+                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
+                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
+            },
+            {
+                id: 17,
+                titulo: "Retrato de sirena",
+                categoria: "retratos",
+                año: 2023,
+                dimensiones: "60x80 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/Retrato/Sirena.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
+                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
+                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
+            },
+            {
+                id: 18,
+                titulo: "Retrato de ángel",
+                categoria: "retratos",
+                año: 2023,
+                dimensiones: "60x80 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/Retrato/Angel.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
+                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
+                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
+            },
+            {
+                id: 19,
+                titulo: "Retrato de ángel",
+                categoria: "retratos",
+                año: 2023,
+                dimensiones: "60x80 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/Retrato/Angle-2.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
+                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
+                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
+            },
+            {
+                id: 20,
+                titulo: "Retrato de mujer desnuda",
+                categoria: "retratos",
+                año: 2023,
+                dimensiones: "60x80 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/Retrato/desnuda.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
+                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
+                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
+            },
+            {
+                id: 21,
+                titulo: "Retrato de la Virgen",
+                categoria: "retratos",
+                año: 2023,
+                dimensiones: "60x80 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/Retrato/Virgen_1.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
+                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
+                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
+            },
+            {
+                id: 22,
+                titulo: "Retrato de la Virgen",
+                categoria: "retratos",
+                año: 2023,
+                dimensiones: "60x80 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/Retrato/Virgen_2.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Retrato íntimo que captura la personalidad y expresión única de la modelo.",
+                proceso: "Trabajo de capas con énfasis en la captura de la luz sobre los rasgos faciales.",
+                materiales: "Óleos sobre lienzo de lino, utilizando pinceles finos de pelo de marta para los detalles."
             },
 
             // OTROS
