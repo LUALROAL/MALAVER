@@ -135,54 +135,54 @@
                 proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
             },
-            // {
-            //     id: 12,
-            //     titulo: "Mariposas",
-            //     categoria: "animalismo",
-            //     año: 2022,
-            //     dimensiones: "70x90 cm",
-            //     tecnica: "Óleo sobre lienzo",
-            //     imagen: "./Galeria/mariposas.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-            //     descripcion: "Estudio de la luz natural en su momento más intenso del día.",
-            //     proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
-            //     materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
-            // },
-            // {
-            //     id: 12,
-            //     titulo: "Tigre",
-            //     categoria: "animalismo",
-            //     año: 2022,
-            //     dimensiones: "70x90 cm",
-            //     tecnica: "Óleo sobre lienzo",
-            //     imagen: "./Galeria/tiger-2.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-            //     descripcion: "Estudio de la luz natural en su momento más intenso del día.",
-            //     proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
-            //     materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
-            // },
-            // {
-            //     id: 13,
-            //     titulo: "León en la sabana",
-            //     categoria: "animalismo",
-            //     año: 2022,
-            //     dimensiones: "70x90 cm",
-            //     tecnica: "Óleo sobre lienzo",
-            //     imagen: "./Galeria/leon.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-            //     descripcion: "Estudio de la luz natural en su momento más intenso del día.",
-            //     proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
-            //     materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
-            // },
-            // {
-            //     id: 14,
-            //     titulo: "Flamencos",
-            //     categoria: "animalismo",
-            //     año: 2022,
-            //     dimensiones: "70x90 cm",
-            //     tecnica: "Óleo sobre lienzo",
-            //     imagen: "./Galeria/flamencos.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-            //     descripcion: "Estudio de la luz natural en su momento más intenso del día.",
-            //     proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
-            //     materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
-            // },
+            {
+                id: 12,
+                titulo: "Mariposas",
+                categoria: "animalismo",
+                año: 2022,
+                dimensiones: "70x90 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/mariposas.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+                proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+                materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            },
+            {
+                id: 12,
+                titulo: "Tigre",
+                categoria: "animalismo",
+                año: 2022,
+                dimensiones: "70x90 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/tiger-2.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+                proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+                materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            },
+            {
+                id: 13,
+                titulo: "León en la sabana",
+                categoria: "animalismo",
+                año: 2022,
+                dimensiones: "70x90 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/leon.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+                proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+                materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            },
+            {
+                id: 14,
+                titulo: "Flamencos",
+                categoria: "animalismo",
+                año: 2022,
+                dimensiones: "70x90 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/flamencos.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+                proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+                materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            },
 
             // OTROS
 

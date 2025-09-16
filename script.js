@@ -291,23 +291,40 @@ function initLightbox() {
     const lightboxTechnique = document.querySelector('.lightbox-technique');
     const lightboxClose = document.querySelector('.lightbox-close');
     const btnDetails = document.querySelector('.btn-details');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+
+    let currentIndex = 0;
+    let currentObras = [];
+
+    function showImage(index) {
+        const obra = currentObras[index];
+        if (obra) {
+            lightboxImg.src = obra.imagen;
+            lightboxTitle.textContent = obra.titulo;
+            lightboxYear.textContent = `Año: ${obra.año}`;
+            lightboxDimensions.textContent = `Dimensiones: ${obra.dimensiones}`;
+            lightboxTechnique.textContent = `Técnica: ${obra.tecnica}`;
+            btnDetails.dataset.id = obra.id;
+            currentIndex = index;
+        }
+    }
 
     // Evento para hacer clic en una imagen
     document.addEventListener('click', function (e) {
         if (e.target.matches('.spin-container img')) {
+            const category = e.target.closest('.spin-container').dataset.category;
+            if (category === 'all') {
+                currentObras = obras;
+            } else {
+                currentObras = obras.filter(o => o.categoria === category);
+            }
+
             const id = e.target.dataset.id;
-            const obra = obras.find(o => o.id == id);
+            const obraIndex = currentObras.findIndex(o => o.id == id);
 
-            if (obra) {
-                // Llenar el lightbox con la información de la obra
-                lightboxImg.src = obra.imagen;
-                lightboxTitle.textContent = obra.titulo;
-                lightboxYear.textContent = `Año: ${obra.año}`;
-                lightboxDimensions.textContent = `Dimensiones: ${obra.dimensiones}`;
-                lightboxTechnique.textContent = `Técnica: ${obra.tecnica}`;
-                btnDetails.dataset.id = obra.id;
-
-                // Mostrar el lightbox
+            if (obraIndex !== -1) {
+                showImage(obraIndex);
                 lightbox.style.display = 'flex';
             }
         }
@@ -330,6 +347,18 @@ function initLightbox() {
         if (e.target === lightbox) {
             lightbox.style.display = 'none';
         }
+    });
+
+    // Evento para el botón de anterior
+    lightboxPrev.addEventListener('click', function () {
+        currentIndex = (currentIndex - 1 + currentObras.length) % currentObras.length;
+        showImage(currentIndex);
+    });
+
+    // Evento para el botón de siguiente
+    lightboxNext.addEventListener('click', function () {
+        currentIndex = (currentIndex + 1) % currentObras.length;
+        showImage(currentIndex);
     });
 }
 

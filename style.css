@@ -414,6 +414,39 @@
           cursor: pointer;
       }
 
+      .lightbox-prev,
+      .lightbox-next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: var(--color-primary-dark);
+          font-weight: bold;
+          font-size: 20px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .lightbox-next {
+          right: 20px;
+          border-radius: 3px 0 0 3px;
+      }
+
+      .lightbox-prev {
+          left: 20px;
+          border-radius: 3px 0 0 3px;
+      }
+
+      .lightbox-prev:hover,
+      .lightbox-next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+      }
+
       /* Modal de detalles */
       .modal {
           display: none;
