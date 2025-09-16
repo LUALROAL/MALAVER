@@ -48,6 +48,9 @@
                 proceso: "Aplicación gestual de la pintura con espátula y pinceladas expresivas.",
                 materiales: "Óleos de diferentes viscosidades sobre lienzo de algodón."
             },
+
+// ANIMALISMO 
+
             {
                 id: 5,
                 titulo: "Panteras en la selva",
@@ -74,12 +77,12 @@
             },
             {
                 id: 7,
-                titulo: "Pez en el agua",
+                titulo: "Cisnes en el agua",
                 categoria: "animalismo",
                 año: 2022,
                 dimensiones: "70x90 cm",
                 tecnica: "Óleo sobre lienzo",
-                imagen: "./Galeria/pez.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                imagen: "./Galeria/cisnes.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
                 descripcion: "Estudio de la luz natural en su momento más intenso del día.",
                 proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
@@ -96,6 +99,93 @@
                 proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
                 materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
             },
+            {
+                id: 10,
+                titulo: "Guacamayas en la selva",
+                categoria: "animalismo",
+                año: 2022,
+                dimensiones: "70x90 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/guacamaya.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+                proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+                materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            },
+            {
+                id: 11,
+                titulo: "Pez Colorido",
+                categoria: "animalismo",
+                año: 2022,
+                dimensiones: "70x90 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/pez-colorido.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+                proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+                materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            },
+            {
+                id: 11,
+                titulo: "Libélula",
+                categoria: "animalismo",
+                año: 2022,
+                dimensiones: "70x90 cm",
+                tecnica: "Óleo sobre lienzo",
+                imagen: "./Galeria/libelula.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+                proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+                materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            },
+            // {
+            //     id: 12,
+            //     titulo: "Mariposas",
+            //     categoria: "animalismo",
+            //     año: 2022,
+            //     dimensiones: "70x90 cm",
+            //     tecnica: "Óleo sobre lienzo",
+            //     imagen: "./Galeria/mariposas.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            //     descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+            //     proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+            //     materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            // },
+            // {
+            //     id: 12,
+            //     titulo: "Tigre",
+            //     categoria: "animalismo",
+            //     año: 2022,
+            //     dimensiones: "70x90 cm",
+            //     tecnica: "Óleo sobre lienzo",
+            //     imagen: "./Galeria/tiger-2.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            //     descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+            //     proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+            //     materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            // },
+            // {
+            //     id: 13,
+            //     titulo: "León en la sabana",
+            //     categoria: "animalismo",
+            //     año: 2022,
+            //     dimensiones: "70x90 cm",
+            //     tecnica: "Óleo sobre lienzo",
+            //     imagen: "./Galeria/leon.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            //     descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+            //     proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+            //     materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            // },
+            // {
+            //     id: 14,
+            //     titulo: "Flamencos",
+            //     categoria: "animalismo",
+            //     año: 2022,
+            //     dimensiones: "70x90 cm",
+            //     tecnica: "Óleo sobre lienzo",
+            //     imagen: "./Galeria/flamencos.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            //     descripcion: "Estudio de la luz natural en su momento más intenso del día.",
+            //     proceso: "Técnica impresionista con pinceladas visibles que capturan el efecto de la luz.",
+            //     materiales: "Óleos sobre lienzo de lino, con pinceles de cerda para texturas marcadas."
+            // },
+
+            // OTROS
+
             {
                 id: 8,
                 titulo: "Reflejos urbanos",
